@@ -42,3 +42,53 @@ The project was designed as a **backend architecture example**, focusing on:
 ---
 
 ## Project Structure
+
+- src/
+- controllers/
+- routes/
+- middleware/
+- database/
+- utils/
+
+
+- **controllers/** → business logic
+- **routes/** → API endpoints
+- **middleware/** → authentication and security
+- **database/** → SQLite initialization
+- **utils/** → shared utilities
+
+---
+
+## Setup
+
+Install dependencies:
+
+```bash
+npm start
+npm install
+```
+Server listening on: http://localhost:3000
+
+**Authenticate User**
+- POST /api/v1/auth/login**
+{
+  "login": "admin",
+  "password": "admin"
+}
+
+**Authorization: Bearer <token>**
+
+**Get all items**
+GET /api/v1/inventario
+
+**Get Item by Id**
+GET /api/v1/inventario/:id
+
+**Create Item**
+- POST /api/v1/inventario
+{
+  "modelo": "Model X",
+  "marca": "Brand Y",
+  "nombreProducto": "Product Z",
+  "stock": 100
+}
