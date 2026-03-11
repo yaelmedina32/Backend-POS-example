@@ -79,10 +79,10 @@ Server listening on: http://localhost:3000
 **Authorization: Bearer <token>**
 
 **Get all items**
-GET /api/v1/inventario
+- GET /api/v1/inventario
 
 **Get Item by Id**
-GET /api/v1/inventario/:id
+- GET /api/v1/inventario/:id
 
 **Create Item**
 - POST /api/v1/inventario
